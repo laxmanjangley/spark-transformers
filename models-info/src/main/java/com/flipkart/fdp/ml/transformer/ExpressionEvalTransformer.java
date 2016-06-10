@@ -28,6 +28,7 @@ public class ExpressionEvalTransformer implements Transformer {
             }
             Function1<String, Object> f = modelInfo.getFunction();
             output[i] = (Double) f.apply(exp);
+//            System.out.println("swag "+output[i].toString()+"\n");
         }
         return output;
     }

@@ -4,6 +4,7 @@ import com.flipkart.fdp.ml.transformer.ExpressionEvalTransformer;
 import com.flipkart.fdp.ml.transformer.Transformer;
 import lombok.Data;
 import scala.Function1;
+import scala.collection.Seq;
 
 /**
  * Created by root on 31/5/16.
@@ -15,7 +16,7 @@ public class ExpressionEvalModelInfo extends AbstractModelInfo {
     private String outputCol;
     private Function1<String, Object> function;
     private String[] inputCols;
-
+//    private Seq<String> inputCols;
     /**
      * @return an corresponding {@link ExpressionEvalTransformer} for this model info
      */
